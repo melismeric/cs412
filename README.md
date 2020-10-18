@@ -35,6 +35,5 @@ Confusion matrix:
  [  3   0   1   2   1   2   1   1  76   2]
  [  0   1   0   0   0   0   0   0   3  90]]
  ```
- 
-##[HERE IS THE CODE](https://colab.research.google.com/drive/1V7-pjbungNp6NZxMjXInFF9yLPuBXWo_)
+[HERE IS THE CODE](https://colab.research.google.com/drive/1V7-pjbungNp6NZxMjXInFF9yLPuBXWo_)
 
