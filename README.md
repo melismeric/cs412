@@ -19,12 +19,22 @@ With development portion of the training data we trained decision tree and k-nn 
 | Decision Tree Classifier m=1  | 39.41667%           |
 | Decision Tree Classifier m=5  | 39.41667%           |
 
-
 m= min_samples_split
 From the table, we could decide that the best classifier for our case is K-nn with k=1. Then we tested classifiers with the test dataset and the conclusion was the same with the output: Testing Accuracy with decision tree classifier = 38.10000%
 Testing Accuracy with K-NN= 88.40000%
 We have obtained the best results with the k-nn classifier (parameters= k= 1.) , giving a digit classification accuracy of 8​ 8.40000%​ on test data.​ In the output we could see that the predictions are the same as the true labels. In the confusion matrix we could see that the true labels are mostly match the prediction labels.
-Confusion matrix:  
-
+```
+Confusion matrix:
+[[ 84   0   0   0   0   0   1   0   0   0]
+ [  0 126   0   0   0   0   0   0   0   0]
+ [  1   1 103   1   0   0   2   3   5   0]
+ [  0   1   0 102   0   0   0   2   1   1]
+ [  1   1   0   0 100   0   1   0   0   7]
+ [  1   0   0   2   0  76   2   0   4   2]
+ [  3   0   0   0   1   0  83   0   0   0]
+ [  0   3   0   0   1   1   0  94   0   0]
+ [  3   0   1   2   1   2   1   1  76   2]
+ [  0   1   0   0   0   0   0   0   3  90]]
+ ```
   
 https://colab.research.google.com/drive/1V7-pjbungNp6NZxMjXInFF9yLPuBXWo_
