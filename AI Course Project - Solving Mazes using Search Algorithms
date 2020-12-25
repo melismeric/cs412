@@ -1,0 +1,13 @@
+AI Course Project - Solving Mazes using Search Algorithms 
+
+The problem is to provide a solution path to the maze with the Depth First Search algorithm. 
+The input is a matrix with a width N and a height M. 
+The maze matrix consists of 0s and 1s which 0s indicate a clear path and 1s indicate a wall.
+The initial position is (0,0) and the goal is  "(N-1, M-1)". To reach the goal, I implemented a depth-first search algorithm that provides a path consist of clear roads(0s). 
+Read_mazes and get_directions functions are implemented to read the input and return the directions. Read_mazes function reads the given mazes from the file and returns each of them as a 2d NumPy array. 
+Get_directions function returns the directions as "R" for right, "L" for left, "U" for up, "D" for down. Depth-first search algorithm takes 2d NumPy array maze as a single parameter. 
+It returns a list of points that starts from (0,0) and ends with (N-1, M-1). If the goal can not be reached from the initial position, it returns none. The depth-first search algorithm is a tree traversal algorithm that tracks a path as far as it can until it either, reaches the goal or has nowhere else to go. 
+In the DFS function, we first define the start and finish positions for the maze. For a DFS non-recursive implementation, we are using a stack instead of a queue to store nodes that will be exploring. Using deque makes it able to check the positions first which were last added to the stack.
+Then the stack is defined which is a double-ended queue. First, we put the start position in the queue. Then repeat this procedure until visiting the goal position or go through all available nodes: take the start node from the queue, check if it was visited or not and check if it's the goal, then put all neighbors at the end of the queue, repeat the process. 
+
+Code: https://colab.research.google.com/drive/1PC9bSLPuvEqvabKnYybdu-g60JVbrBef?usp=sharing
